@@ -31,4 +31,13 @@ def temperature_tuple(temperatures: Iterable, input_unit_of_measurement: str) ->
     :param input_unit_of_measurement: The unit a measure to use to convert the values in the temperatures parameter
     :return: A tuple of tuples
     """
-    pass  # remove pass statement and implement me
+    temp_tuple = []
+    for i in temperatures:
+        if input_unit_of_measurement == 'f':
+            temp_tuple.append((i, convert_to_celsius(i)))
+        elif input_unit_of_measurement == 'c':
+            temp_tuple.append((i, convert_to_fahrenheit(i)))
+        else:
+            return tuple()
+
+    return tuple(temp_tuple)
