@@ -39,7 +39,8 @@ def print_indexes_and_entries(indexes: Iterable, entries: Iterable) -> None:
     :param entries: A list or tuple
     :return: None
     """
-    pass  # remove pass statement and implement me
+    for i in indexes, entries:
+        print(f'Index: {indexes[i]}          Entry: {entries[i]}')
 
 
 def print_items_with_index(items: Iterable):
