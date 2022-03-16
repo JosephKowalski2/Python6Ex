@@ -17,7 +17,6 @@ def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: st
     board[pos_y][pos_x].replace('', symbol)
 
 
-
 def count_instances(collection: Tuple, instance: Union[int, str]) -> int:
     """
     This function counts the number of occurrences of the instance value within the collection parameter.
@@ -26,7 +25,7 @@ def count_instances(collection: Tuple, instance: Union[int, str]) -> int:
     :param instance: An item in the collection parameter
     :return: An integer.
     """
-    pass  # remove pass statement and implement me
+    return collection.count(instance)
 
 
 def print_indexes_and_entries(indexes: Iterable, entries: Iterable) -> None:
